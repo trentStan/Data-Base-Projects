@@ -1,0 +1,2 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `addStock`(p_productNo varchar(30), p_branchNo varchar(30), addedStock varchar(30))
+UPDATE `BranchStock` SET numStock = numStock + addedStock WHERE Product_productNo = p_productNo AND Branch_branchNo = p_branchNo

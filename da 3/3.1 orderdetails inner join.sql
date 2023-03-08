@@ -1,0 +1,1 @@
+SELECT * FROM orderdetail INNER JOIN `order` ON `order`.orderID = `orderdetail`.Order_orderID;
